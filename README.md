@@ -1,16 +1,39 @@
-# React + Vite
+# ✅ My Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A bento-style todo app built with React and Vite. Add tasks with due dates,
+see how many are due today, and spot busy days on a calendar.
 
-Currently, two official plugins are available:
+![app image](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- Add, complete, edit (double-click) and delete tasks
+- Due dates for tasks
+- Filters: All, Active, Completed
+- "Tasks left" counter and a Clear completed button
+- Today's tasks and Done today stat cards
+- Calendar view: dots on days with pending tasks, ⭐ when all are done
+- Tasks stay saved after refresh (localStorage)
+- Responsive bento layout for desktop and mobile
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Data is stored in your browser's localStorage, so each visitor has their own list.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (hooks: `useState`, custom `useLocalStorage`)
+- Vite
+- CSS (Grid, custom properties)
+
+## 🚀 Run locally
+
+    git clone https://github.com/ReachalJain/todo-app.git
+    cd todo-app
+    npm install
+    npm run dev
+
+## 📁 Project structure
+
+    src/
+      components/   TodoForm, TodoList, TodoItem, FilterBar, StatCard, CalendarView
+      hooks/        useLocalStorage
+      App.jsx
