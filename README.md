@@ -1,4 +1,4 @@
-# ✅ My Todo App
+# ✅  My Todo App
 
 A bento-style todo app built with React and Vite. Add tasks with due dates,
 see how many are due today, and spot busy days on a calendar.
